@@ -105,6 +105,7 @@ body {
 }
 
 .header__wrapper-btn {
+  cursor: pointer;
   width: 100px;
   height: 40px;
   color: var(--white);
@@ -129,6 +130,7 @@ body {
   border: none;
   margin: 0 auto;
   display: block;
+  cursor: pointer;
 }
 
 .header h1 {
@@ -205,8 +207,6 @@ body {
   max-width: 1110px;
   width: 100%;
   margin: 0 auto;
-
-
 }
 
 .possibilities h2 {
@@ -303,7 +303,7 @@ body {
 
 .technologies__item {
   max-width: 255px;
-  
+  height: 330px;
 }
 
 .technologies__inner h4 {
@@ -312,7 +312,6 @@ body {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 11px;
-  
 }
 
 .technologies__inner p {
@@ -327,18 +326,150 @@ body {
 .technologies__inner img {
   display: block;
   margin: 0 auto;
-  }
+}
 
-  .technologies__inner {
-    position: relative;
+.technologies__inner {
+  position: relative;
   top: -54px;
   margin-bottom: 108px;
-  }
+}
 
+/* Section Focus */
 
+.focus {
+  background-color: var(--pink);
+  min-height: 500px;
+  padding-left: 165px;
+  padding-right: 260px;
+}
 
+.focus__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 94px;
+}
 
+.focus__left h2 {
+  color: var(--white);
+  font-size: 36px;
+  font-weight: 500;
+  max-width: 445px;
+  margin-bottom: 56px;
+}
 
+.focus__left p {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  max-width: 445px;
+  min-height: 72px;
+  margin-bottom: 22px;
+}
+
+.focus__left img {
+  margin-right: 17px;
+}
+
+.focus__left img:last-child {
+  margin-right: 0;
+}
+
+.focus {
+  margin-bottom: 159px;
+}
+
+/* Section Write */
+
+.write {
+  padding-left: 176px;
+  padding-right: 165px;
+}
+
+.write__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.write__left h2 {
+  color: var(--black);
+  font-size: 36px;
+  font-weight: 500;
+  padding-top: 24px;
+  margin-bottom: 55px;
+}
+
+.write__left p {
+  color: var(--black);
+  font-size: 14px;
+  max-width: 434px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.write__right input {
+  width: 540px;
+  height: 60px;
+  border-radius: 6px;
+  border: 1px solid var(--gray-1, #333);
+  padding-left: 31px;
+  color: rgba(19, 39, 67, 0.50);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.write__right button {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 160px;
+  height: 50px;
+  border-radius: 6px;
+  border: 1.5px solid var(--pink);
+  background: var(--pink);
+  margin-bottom: 136px;
+  cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+  background: #FAFAFA;
+  padding-left: 168px;
+}
+
+.footer h3 {
+  padding-top: 43px;
+  color: var(--black);
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 19px;
+}
+
+.footer p {
+  color: var(--black);
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 161px;
+  margin-bottom: 44px;
+}
+
+.footer span {
+  display: block;
+  color: var(--black);
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  padding-bottom: 46px;
+}
+
+/* @Media */
 
 @media screen and (max-width: 1314px) {
   .manage__wrapper {
@@ -354,11 +485,38 @@ body {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .focus__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .focus {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media screen and (max-width: 1198px) {
   .header__wrapper {
     flex-direction: column;
+  }
+
+  .write__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .write__left h2 {
+    margin-bottom: 22px;
+  }
+
+  .write__left p {
+    margin-bottom: 15px;
+  }
+
+  .focus {
+    margin-bottom: 25px;
   }
 }
 
@@ -396,6 +554,21 @@ body {
 
   .technologies__item {
     height: 250px;
+  }
+}
+
+@media screen and (max-width: 592px) {
+  .write__right input {
+    width: 250px;
+  }
+
+  .write {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .write__left h2 {
+    text-align: center;
   }
 }
 
@@ -447,6 +620,28 @@ body {
 
   .technologies__grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .focus__right img {
+    width: 280px;
+  }
+
+  .focus__left h2 {
+    text-align: center;
+  }
+
+  .footer {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .footer p {
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
+
+  .write__right button {
+    margin-bottom: 35px;
   }
 }
 
