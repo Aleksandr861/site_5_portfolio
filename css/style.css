@@ -368,11 +368,11 @@ body {
   margin-bottom: 22px;
 }
 
-.focus__left img {
+.focus__left a {
   margin-right: 17px;
 }
 
-.focus__left img:last-child {
+.focus__left a:last-child {
   margin-right: 0;
 }
 
@@ -652,5 +652,15 @@ body {
 
   .possibilities__dscr {
     width: 220px;
+  }
+
+  .possibilities__dscr p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .possibilities__dscr h4 {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
